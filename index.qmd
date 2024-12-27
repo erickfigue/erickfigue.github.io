@@ -1,16 +1,33 @@
 ---
-title: "About me"
-format:
-  html:
-    page-layout: full
+#title: "About me"
+image: images/headshot.jpg
+#format:
+#  html:
+#    page-layout: full
+toc: false
+about: 
+
+  template: trestles
+
+  image-shape: rounded
+  image-width: 17em
+
+  links:
+    - icon: linkedin
+      href: https://linkedin.com/in/e-figueroa-i
+      target: _blank
+    - icon: github
+      href: https://github.com/erickfigue
+      target: _blank
+    - icon: envelope
+      href: mailto:erick.figueroa@duke.edu
+      target: _blank
+    - icon: twitter
+      href: https://twitter.com/EFigueroaI
+      target: _blank
+    - icon: instagram
+      href: https://www.instagram.com/e.figueroa.i
+      target: _blank
 ---
 
-::::: columns
-::: {.column width="30%"}
-![](images/Americana-02.jpg){width="221"}
-:::
-
-::: {.column width="70%" style="text-align:justify"}
 I'm a Peruvian researcher interested in the study of genetic adaptation and co-evolution of humans and non-human primates and their parasites like those from the genus *Plasmodium*. I'm specially interested in conducting studies in evolutionary genetics in populations with history of admixture.
-:::
-:::::

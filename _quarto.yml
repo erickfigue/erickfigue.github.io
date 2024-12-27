@@ -11,22 +11,25 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - text: Blog
+      - text: My Blog
         href: posts.qmd
+  #    - text: Email
+  #      href: mailto:erick.figueroa@duke.edu
    
-    tools: 
-      - icon: github
-        href: https://github.com/erickfigue
-        target: _blank
-      - icon: twitter
-        href: https://twitter.com/EFigueroaI
-        target: _blank
-      - icon: linkedin
-        href: https://linkedin.com/in/e-figueroa-i
-        target: _blank
-      - icon: instagram
-        href: https://www.instagram.com/e.figueroa.i
-        target: _blank
+#    tools: 
+#      - icon: github
+#        href: https://github.com/erickfigue
+#        target: _blank
+#      - icon: twitter
+#        href: https://twitter.com/EFigueroaI
+#        target: _blank
+#      - icon: linkedin
+#        href: https://linkedin.com/in/e-figueroa-i
+#        target: _blank
+#      - icon: instagram
+#        href: https://www.instagram.com/e.figueroa.i
+#       target: _blank
+
       
 
 format:
@@ -36,15 +39,16 @@ format:
       dark: darkly
     mainfont: Sylfaen
     fontsize: 1.2rem
-    fontcolor: "#253343"
+    fontcolor: "#405974"
     linkcolor: "#093163"
     monofont: courier new
     css: styles.css
     toc: true
-    grid: 
-      margin-width: 200px
+    #grid: 
+     # margin-width: 50px
       #sidebar-width: 500px
       #body-width: 1000px
-
+    page-layout: article
+    
 editor: visual
 
