@@ -1,0 +1,16 @@
+---
+title: "About me"
+format:
+  html:
+    page-layout: full
+---
+
+::::: columns
+::: {.column width="30%"}
+![](images/Americana-02.jpg){width="221"}
+:::
+
+::: {.column width="70%" style="text-align:justify"}
+I'm a Peruvian researcher interested in the study of genetic adaptation and co-evolution of humans and non-human primates and their parasites like those from the genus *Plasmodium*. I'm specially interested in conducting studies in evolutionary genetics in populations with history of admixture.
+:::
+:::::

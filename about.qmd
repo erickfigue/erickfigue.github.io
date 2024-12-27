@@ -1,0 +1,11 @@
+---
+title: "About"
+---
+
+About this site
+
+```{r}
+1 + 1
+```
+
+![*IA created image*](images/SA_cougar.png){fig-alt="SA cougar" fig-align="center" width="335"}

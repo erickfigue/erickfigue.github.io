@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Here goes my blog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/post2.html",
+    "href": "blog/post2.html",
+    "title": "Post 2",
+    "section": "",
+    "text": "Here goes my blog"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\nIA created image"
+  },
+  {
+    "objectID": "blog/post1.html",
+    "href": "blog/post1.html",
+    "title": "Post 1",
+    "section": "",
+    "text": "Here goes my blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About me",
+    "section": "",
+    "text": "I’m a Peruvian researcher interested in the study of genetic adaptation and co-evolution of humans and non-human primates and their parasites like those from the genus Plasmodium. I’m specially interested in conducting studies in evolutionary genetics in populations with history of admixture."
+  }
+]

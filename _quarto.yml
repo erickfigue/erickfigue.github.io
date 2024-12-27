@@ -1,0 +1,49 @@
+project:
+  type: website
+
+website:
+  title: "Erick Figueroa Ildefonso"
+  navbar:
+    #title: "My personal website"
+    #logo: /images/SA_cougar.png
+    right:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: Blog
+        href: posts.qmd
+   
+    tools: 
+      - icon: github
+        href: https://github.com/erickfigue
+        target: _blank
+      - icon: twitter
+        href: https://twitter.com/EFigueroaI
+        target: _blank
+      - icon: linkedin
+        href: https://linkedin.com/in/e-figueroa-i
+        target: _blank
+      - icon: instagram
+        href: https://www.instagram.com/e.figueroa.i
+        target: _blank
+      
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    mainfont: Sylfaen
+    fontsize: 1.2rem
+    fontcolor: "#253343"
+    linkcolor: "#093163"
+    monofont: courier new
+    css: styles.css
+    toc: true
+    grid: 
+      margin-width: 200px
+      #sidebar-width: 500px
+      #body-width: 1000px
+
+editor: visual
+
