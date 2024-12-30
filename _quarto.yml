@@ -38,8 +38,8 @@ format:
       light: flatly
       dark: darkly
     mainfont: Sylfaen
-    fontsize: 1.2rem
-    fontcolor: "#405974"
+    fontsize: 1rem
+    fontcolor: "#4d6e91"
     linkcolor: "#093163"
     monofont: courier new
     css: styles.css
