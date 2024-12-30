@@ -30,4 +30,8 @@ about:
       target: _blank
 ---
 
-I'm a Peruvian researcher interested in the study of genetic adaptation and co-evolution of humans and non-human primates and their parasites like those from the genus *Plasmodium*. I'm specially interested in conducting studies in evolutionary genetics in populations with history of admixture.
+Hi, I'm Erick, I'm a researcher interested in population genomics to understand the genetics of adaptation and co-evolution through genome studies of human and non-human primates, as well as their pathogens. I have a particular interest in evolutionary genetics in populations with history of admixture.
+
+I'm currently pursuing a PhD in Genetics and Genomics at Duke University. Before that I worked as research associate at Amy Goldberg's lab, analyzing the genome of non-human primates to identify evidence of inbreeding and hybridization between species.
+
+I got my masters' in Biochemistry and Molecular Biology at Cayetano Univeristy in Peru, in 2023. For my thesis I worked in the malaria lab of Dionicia Gamboa, where I performed population genomic analysis of *Plasmodium falciparum* from the Peruvian Amazon to identify evidence of selection.
