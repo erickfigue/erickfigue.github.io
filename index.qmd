@@ -30,10 +30,6 @@ about:
       target: _blank
 ---
 
-Hi, I'm Erick Figueroa, I'm a researcher interested in population genomics to understand the genetics of adaptation and co-evolution through genome studies of human and non-human primates, as well as their pathogens. I have a particular interest in evolutionary genetics in populations with history of admixture.
+Hi!, I'm Erick Figueroa, a researcher focused on population genomics, with interest in genetics of adaptation, co-evolution in humans, primates and their pathogens. I have a particular interest in evolutionary studies in populations with history of admixture.
 
-I'm currently pursuing a PhD in Genetics and Genomics at Duke University. Before joining the program, I was a research associate at Amy Goldberg's lab, where I analyzed the genome of howler monkeys to identify evidence of inbreeding and hybridization between species.
-
-I got my masters' in Biochemistry and Molecular Biology at Cayetano Univeristy in Peru, in 2023. For my thesis I did a population genomic analysis of *Plasmodium falciparum* from the Peruvian Amazon to identify evidence of selection. I did this thesis with Dionicia Gamboa in the malaria lab.
-
-I also have worked in genetic of hereditary human diseases as a researcher at the Peruvian neurogenetics research center with Mario Cornejo. There studied the genetics of the ataxia SCA2 and non-syndromic hearing loss. This last work was in collaboration and supervision of Mustafa Tekin from University of Miami, and was published in the journal genes.
+I am currently pursuing a PhD in Genetics and Genomics at Duke University. Previously, I worked at Amy Goldberg's lab, studying the genomics of howler monkeys, with an emphasis on inbreeding and hybridization. I earned my master’s in Biochemistry and Molecular Biology from Cayetano University in Peru (2023), where I analyzed *Plasmodium falciparum* in the Peruvian Amazon for my thesis, supervised by Dionicia Gamboa. I have also studied hereditary diseases, including ataxia SCA2 at the Peruvian Neurogenetics Research Center with Mario Cornejo, and hearing loss in collaboration with Mustafa Tekin from the University of Miami, with our findings published in the journal *Genes*.
