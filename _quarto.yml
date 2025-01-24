@@ -3,14 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "Erick Figueroa Ildefonso"
+  title: "Erick Figueroa-Ildefonso"
   navbar:
     #title: "My personal website"
     #logo: /images/SA_cougar.png
     right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - text: My Posts
+        href: about.qmd
       - text: My Blog
         href: posts.qmd
   #    - text: Email
