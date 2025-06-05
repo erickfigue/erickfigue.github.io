@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Erick Figueroa-Ildefonso</title>
+<title>Blog – Erick Figueroa-Ildefonso</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,9 +30,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -40,7 +43,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-d4d82db7f75e83ee50576d5a37fccd3d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-148d3873aab8943313664d0fe634247c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +70,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -91,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -99,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">My Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog_posts.html"> 
+    <a class="nav-link active" href="./blog_posts.html" aria-current="page"> 
 <span class="menu-text">My Blog</span></a>
   </li>  
 </ul>
@@ -114,45 +174,87 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/headshot.jpg" class="about-image
-  rounded " style="width: 17em;">
-<header id="title-block-header" class="quarto-title-block"></header>
-    <div class="about-links">
-  <a href="https://linkedin.com/in/e-figueroa-i" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://github.com/erickfigue" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="mailto:erick.figueroa@duke.edu" class="about-link" rel="" target="_blank">
-    <i class="bi bi-envelope-at"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://twitter.com/EFigueroaI" class="about-link" rel="" target="_blank">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://scholar.google.com/citations?hl=en&amp;user=XjwpjLYAAAAJ" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><iconify-icon role="img" inline="" icon="academicons:google-scholar" aria-label="Icon google-scholar from academicons Iconify.design set." title="Icon google-scholar from academicons Iconify.design set."></iconify-icon></span>
-  </a>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Blog</h1>
 </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<div style="text-align: justify;">
-<p>Hi! I’m Erick, a researcher focused on population genomics, with interest in genetics of adaptation, co-evolution in humans, primates and their pathogens. I have a particular interest in evolutionary studies in populations with history of admixture.</p>
-<p>I am currently pursuing a PhD in Genetics and Genomics at Duke University. Previously, I worked at Amy Goldberg’s lab, studying the genomics of howler monkeys, with an emphasis on inbreeding and hybridization. I earned my master’s in Biochemistry and Molecular Biology from Cayetano University in Peru (2023), where I analyzed <em>Plasmodium falciparum</em> in the Peruvian Amazon for my thesis, supervised by Dionicia Gamboa. I have also studied hereditary diseases, including ataxia SCA2 at the Peruvian Neurogenetics Research Center with Mario Cornejo, and hearing loss in collaboration with Mustafa Tekin from the University of Miami, with our findings published in the journal <em>Genes</em>.</p>
-</div>
+  
 
 
-</main></div>
+</header>
+
+
+<p>Here I’ll post some random stuff.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1749094579447" data-listing-reading-time-sort="2" data-listing-word-count-sort="370">
+<div class="thumbnail">
+<p><a href="./blog/post1.html" class="no-external"></a></p><a href="./blog/post1.html" class="no-external">
+<p class="card-img-top"><img src="blog\media\fevre_dream.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./blog/post1.html" class="no-external"></a></p>
 </div>
- <!-- /main -->
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/post1.html" class="no-external">I read the Fevre Dream</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./blog/post1.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./blog/post1.html" class="no-external">My first book review</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./blog/post1.html" class="no-external"></a></p><a href="./blog/post1.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1720848297399" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail">
+<p><a href="./blog/post2.html" class="no-external"></a></p><a href="./blog/post2.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./blog/post2.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/post2.html" class="no-external">Post 2</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./blog/post2.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./blog/post2.html" class="no-external">Here goes my blog</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./blog/post2.html" class="no-external"></a></p><a href="./blog/post2.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -317,6 +419,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

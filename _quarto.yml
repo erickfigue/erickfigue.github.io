@@ -13,7 +13,7 @@ website:
       - text: My Posts
         href: about.qmd
       - text: My Blog
-        href: posts.qmd
+        href: blog_posts.qmd
   #    - text: Email
   #      href: mailto:erick.figueroa@duke.edu
    
