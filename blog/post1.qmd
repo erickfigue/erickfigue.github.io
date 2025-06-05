@@ -4,9 +4,9 @@ title: "I read the Fevre Dream"
 
 My first book review
 
-Author: George R.R. Martin
+Author: George R.R. Martin 
 
-![](media/fevre_dream.jpg){fig-align="center" width="200"}
+![](media/fevre_dream.jpg){fig-align="center" width="150"}
 
 I chose Fevre Dream because some time ago I decided to read more consistently outside of academic and scientific literature. To stay motivated, I began following accounts dedicated to books, reading, and libraries, and that’s how I found the Fevre Dream. A virtual bookstore was offering it, but I couldn’t purchase it at that time. Later during my visit to Peru I went to Quilca’s bookstores in search of new reads to bring back to Durham, and I made sure to looks for Fevre Dream. By then, I had read a brief synopsis, so I wanted to give it a try.
 
